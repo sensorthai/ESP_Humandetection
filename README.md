@@ -1,2 +1,11 @@
 # EdgeComputing
-Some programs to test TinyML
+  This project aims to deploy a TensorFlow lite model into TTGO T-Camera ESP32 WROVER using Micropython. The approach is suitable for beginners willing to deploy a simple human detection model in Tensorflow lite framework. 
+This project was based on @moclieri  https://github.com/mocleiri/tensorflow-micropython-examples.git and thanks to @uraich https://github.com/uraich/EdgeComputing/tree/main/firmware
+for fixing the camera module issues presented in the recent MicroPython firmware. For more information please visit their respiratory.
+ 
+# Instructions
+  Any Python compiler should work with this project. 
+However, this guide will use the latest Thonny IDE version, visit https://thonny.org/
+to install the firmware and compile MicroPython codes. 
+
+# Step-One install firmware
