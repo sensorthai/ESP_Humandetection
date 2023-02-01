@@ -10,4 +10,4 @@ However, this guide will use the latest Thonny IDE version as an intuition for n
 <br />
 <br />
 <space>  Install firmware
- ![alt text](https://github.com/[sensorthai]/[ESP_humandetection]/Image/[main]/downloadfirmware1.PNG?raw=true)
+ ![alt text](https://github.com/sensorthai/ESP_humandetection/Image/main/downloadfirmware1.PNG?raw=true)
