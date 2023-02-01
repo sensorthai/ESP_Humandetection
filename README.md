@@ -12,4 +12,4 @@ However, this guide will use the latest Thonny IDE version as an intuition for n
 <space>  Install firmware
 ![image](https://user-images.githubusercontent.com/37290558/216074702-f97eec7a-b392-401b-985b-68013d23ddcd.png)
  
-<img src="https://user-images.githubusercontent.com/37290558/216074702-f97eec7a-b392-401b-985b-68013d23ddcd.png" alt="Employee data" title="Employee Data title">
+<img src="/ESP_humandetection/Image/downloadfirmware1.PNG" alt="Employee data" title="Employee Data title">
