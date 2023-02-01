@@ -4,10 +4,11 @@ This project was based on @moclieri  https://github.com/mocleiri/tensorflow-micr
 for fixing the camera module issues presented in the recent MicroPython firmware. For more information please visit their respository.
  
 # Instructions
-  Any Python compiler should work with this project. 
+Any Python compiler should work with this project. 
 However, this guide will use the latest Thonny IDE version as an intuition for new users, visit https://thonny.org/
-to install the firmware and compile MicroPython codes. 
-      kjhgjkhkj
+to install the firmware and compile MicroPython codes. <br />
+asdasd
+      
       
 
 # Step-One install firmware
