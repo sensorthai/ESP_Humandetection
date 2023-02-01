@@ -10,5 +10,6 @@ However, this guide will use the latest Thonny IDE version as an intuition for n
 <br />
 <br />
 <space>  Install firmware
+![image](https://user-images.githubusercontent.com/37290558/216074702-f97eec7a-b392-401b-985b-68013d23ddcd.png)
  
-<img src="sensorthai/ESP_humandetection/Image/downloadfirmware1.PNG" alt="Employee data" title="Employee Data title">
+<img src="https://user-images.githubusercontent.com/37290558/216077119-3222619c-a5c7-43d0-83e1-f48bf03b8a50.png" alt="Employee data" title="Click tools and go to option, set the interpreter to these values">
