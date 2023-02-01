@@ -9,4 +9,4 @@ However, this guide will use the latest Thonny IDE version as an intuition for n
 to install the firmware and compile MicroPython codes.
 <br />
 <br />
-<space> Step-One install firmware
+<space>  Install firmware
