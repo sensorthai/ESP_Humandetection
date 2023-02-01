@@ -7,6 +7,5 @@ for fixing the camera module issues presented in the recent MicroPython firmware
 Any Python compiler should work with this project. 
 However, this guide will use the latest Thonny IDE version as an intuition for new users, visit https://thonny.org/
 to install the firmware and compile MicroPython codes.
-
 <br />
-# Step-One install firmware
+   Step-One install firmware
