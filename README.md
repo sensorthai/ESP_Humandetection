@@ -10,5 +10,6 @@ However, this guide will use the latest Thonny IDE version as an intuition for n
 <br />
 <br />
 <space>  Install firmware
-![image](https://user-images.githubusercontent.com/37290558/216074577-ab2d911f-be77-4adf-88a5-335ab0db34d7.png)
-
+![image](https://user-images.githubusercontent.com/37290558/216074702-f97eec7a-b392-401b-985b-68013d23ddcd.png)
+ 
+<img src="https://user-images.githubusercontent.com/37290558/216074702-f97eec7a-b392-401b-985b-68013d23ddcd.png" alt="Employee data" title="Employee Data title">
