@@ -10,4 +10,5 @@ However, this guide will use the latest Thonny IDE version as an intuition for n
 <br />
 <br />
 <space>  Install firmware
- ![alt text](https://github.com/sensorthai/ESP_humandetection/Image/main/downloadfirmware2.JPG?raw=true)
+![image](https://user-images.githubusercontent.com/37290558/216074577-ab2d911f-be77-4adf-88a5-335ab0db34d7.png)
+
