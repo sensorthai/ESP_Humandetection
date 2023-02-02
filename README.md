@@ -1,7 +1,7 @@
 <img src = "https://user-images.githubusercontent.com/37290558/216087644-acc8a249-bfc4-49f4-9eab-2856729b6a4c.png" width='50%'/> <br />
 
 # About this repository
-This project aims to deploy a TensorFlow lite model into TTGO T-Camera ESP32 WROVER using Micropython. We will be using Thonny as a Python IDE to install the firmware and compile the scripts. <br />
+This project aims to deploy a TensorFlow lite model into TTGO T-Camera ESP32 WROVER using Micropython. The given approach use Thonny as a Python IDE to install the firmware and compile the scripts. <br />
 This project was based on @moclieri  [https://github.com/mocleiri/tensorflow-micropython-examples.git](https://github.com/mocleiri/tensorflow-micropython-examples/tree/main/examples/person_detection) and thanks to @uraich https://github.com/uraich/EdgeComputing/tree/main/firmware for fixing the camera module issues presented in the recent MicroPython firmware. For more information please visit their respository. <br />
  
 # Uploading firmware into ESP32
@@ -13,6 +13,7 @@ Next click on 'Install or update Micropython' on the bottom right of the window.
 <img src="https://user-images.githubusercontent.com/37290558/216077119-3222619c-a5c7-43d0-83e1-f48bf03b8a50.png"> <br /><br />
 
 Upload the firmware bin. The file can be found inside the firmware folder with .bin extension <br /> <br />
+> Thanks @uraich again for the recent fix with the given firmware. <br /><br />
 <img src="https://user-images.githubusercontent.com/37290558/216079469-459d8627-3502-4b05-8a4c-109652592622.png"> <br /> <br /> 
 
 Once the firmware is uploaded, press the boot button to reset ESP32 and test the firmware by importing the given library. <br /> 
