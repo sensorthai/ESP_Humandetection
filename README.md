@@ -23,6 +23,8 @@ All imports should not raise any errors. <br /> <br />
 # Compiling the scripts
 Upload all files in 'Micropython-scripts' folder into ESP-32.<br />  
 > If 'device is busy' reset the ESP-32 by pressing the rst button, or interupt Thonny's backend by pressing ctr+c.<br />
+
+
 Run the program
 > If there is an 'Error when initializing the camera', simply reset your ESP32.<br />
 
