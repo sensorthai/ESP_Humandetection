@@ -26,6 +26,6 @@ Upload all files in 'Micropython-scripts' folder into ESP-32.<br />
 
 <img src = "https://user-images.githubusercontent.com/37290558/216365255-ff58276d-d754-446c-b1cd-58e7184dcb05.png">
 
-Run the program
+Run main.py script
 > If there is an 'Error when initializing the camera', simply reset your ESP32.<br />
 
