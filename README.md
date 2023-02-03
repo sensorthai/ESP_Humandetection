@@ -29,3 +29,7 @@ Upload all files in 'Micropython-scripts' folder into ESP-32.<br />
 Run main.py script
 > If there is an 'Error when initializing the camera', simply reset your ESP32.<br />
 
+# About the scripts
+To write and update the SSD1306 OLED screen, two parameters was used as an input. <br/ >
+The first input is string text to be shown. <br/ >
+The second input is an int variable
