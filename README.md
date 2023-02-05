@@ -41,6 +41,7 @@ Thanks to Random Nerd Tutorials for providing the SSD1306 OLED display file, for
 
 Since I'm using TTGO T-Camera ESP32 WROVER, the camera pins was assign as followings. Please check your camera pins accordingly. <br />
 > If an 'Error when initializing the camera' still persisted after resetting esp32, please check your camera pins. <br /> <br />
+<img src = "https://user-images.githubusercontent.com/37290558/216828227-13d9b565-2398-42e7-a6c1-f79b5e8a57d9.png">
 
 
 Input_callback function setup bytes for an input Tensor. In other words it prepares the input picture captured by the camera to be used with AI model. <br />
@@ -57,6 +58,8 @@ microlite interpreter in line 63 has 4 input paramters.<br />
 > Memory space for inferencing the Tensorflow-Lite model, again this depends greatly on the size of the model. <br />
 > Callback function for input tensor. <br />
 > Callback fucntion for the output tensor <br />
+<img src = "https://user-images.githubusercontent.com/37290558/216828319-eb244890-f107-4aae-9b87-08a098b9e20e.png">
+
 
 In the main loop the program runs as followings: <br />
 1. Get machine time in seconds, use for calculating FPS. <br />
