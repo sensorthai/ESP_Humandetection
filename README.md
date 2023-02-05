@@ -54,7 +54,7 @@ If no person is found or confidence is below 52 %, flip the screen's color the b
 This sections primarily opens and prepares the Tensorflow-Lite model to be used in the program. The bytearray in line 58 depends on the size of the model. <br />
 microlite interpreter in line 63 has 4 input paramters.<br />
 > Size of the input model, in this case we already prepares the model in previous section. <br />
-> Memory space for the Tensorflow-Lite model, again this depends on the size of the model. <br />
+> Memory space for inferencing the Tensorflow-Lite model, again this depends greatly on the size of the model. <br />
 > Callback function for input tensor. <br />
 > Callback fucntion for the output tensor <br />
 
