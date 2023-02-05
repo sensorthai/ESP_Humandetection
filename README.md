@@ -41,24 +41,26 @@ Thanks to Random Nerd Tutorials for providing the SSD1306 OLED display file, for
 
 Since I'm using TTGO T-Camera ESP32 WROVER, the camera pins was assign as followings. Please check your camera pins accordingly. <br />
 > If an 'Error when initializing the camera' still persisted after resetting esp32, please check your camera pins. <br /> <br />
-<img src = "https://user-images.githubusercontent.com/37290558/216828227-13d9b565-2398-42e7-a6c1-f79b5e8a57d9.png">
+<img src = "https://user-images.githubusercontent.com/37290558/216828227-13d9b565-2398-42e7-a6c1-f79b5e8a57d9.png"> <br /> <br />
 
 
 Input_callback function setup bytes for an input Tensor. In other words it prepares the input picture captured by the camera to be used with AI model. <br />
-<img src = "https://user-images.githubusercontent.com/37290558/216828407-b22152f7-6cef-4bf0-855b-7d8431ba32b5.png">
+<img src = "https://user-images.githubusercontent.com/37290558/216828407-b22152f7-6cef-4bf0-855b-7d8431ba32b5.png"> <br /> <br />
 
 Output_callback function retrives AI condfidence values and print them to OLED screen. Microlite Outputs a Tensor value in signed 8-bit integer, namely from
 -128 to 127. We will convert this in a more readable manner, from 0 to 100 % instead. <br />
 If the confidence values is more than or equal to 52 %, change the color of the screen to white and display 'Person found!'<br />
 If no person is found or confidence is below 52 %, flip the screen's color the black and display 'No person found' <br />
+<img src = "https://user-images.githubusercontent.com/37290558/216828633-094d7599-af97-4dee-87ab-34da3b453a89.png"> <br /> <br />
+
 
 This sections primarily opens and prepares the Tensorflow-Lite model to be used in the program. The bytearray in line 58 depends on the size of the model. <br />
 microlite interpreter in line 63 has 4 input paramters.<br />
 > Size of the input model, in this case we already prepares the model in previous section. <br />
 > Memory space for inferencing the Tensorflow-Lite model, again this depends greatly on the size of the model. <br />
 > Callback function for input tensor. <br />
-> Callback fucntion for the output tensor <br />
-<img src = "https://user-images.githubusercontent.com/37290558/216828319-eb244890-f107-4aae-9b87-08a098b9e20e.png">
+> Callback fucntion for the output tensor. <br />
+<img src = "https://user-images.githubusercontent.com/37290558/216828319-eb244890-f107-4aae-9b87-08a098b9e20e.png"> <br /> <br />
 
 
 In the main loop the program runs as followings: <br />
@@ -66,4 +68,6 @@ In the main loop the program runs as followings: <br />
 2. Use the camera to capture an image. <br />
 3. Get ouput from the AI in accordance with the captured image. <br />
 4. Display FPS value on the bottom of the OLED screen. <br />
-5. Reset OLED screen so it can be updated with new texts/values. <br /> <br />
+5. Reset OLED screen so it can be updated with new texts/values. <br />
+!<img src = "https://user-images.githubusercontent.com/37290558/216828682-bc0428ac-af3d-4c1b-8d34-4941b5d0b294.png"> <br /> <br />
+
