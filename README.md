@@ -45,7 +45,7 @@ Since I'm using TTGO T-Camera ESP32 WROVER, the camera pins was assign as follow
 
 
 Input_callback function setup bytes for an input Tensor. In other words it prepares the input picture captured by the camera to be used with AI model. <br />
-
+<img src = "https://user-images.githubusercontent.com/37290558/216828407-b22152f7-6cef-4bf0-855b-7d8431ba32b5.png">
 
 Output_callback function retrives AI condfidence values and print them to OLED screen. Microlite Outputs a Tensor value in signed 8-bit integer, namely from
 -128 to 127. We will convert this in a more readable manner, from 0 to 100 % instead. <br />
