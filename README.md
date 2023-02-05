@@ -32,19 +32,21 @@ Run main.py script
 # About the scripts
 To write and update the SSD1306 OLED screen, a function with three input parameters was used. <br />
 The first input is a string variable which displays text into OLED screen. <br />
-Second input positions the texts in x-direction(horizontal) of the OLED screen  <br />
-Third input was used to position the texts in y-direction(vertical) of the OLED screen <br />
-Thanks to Random Nerd Tutorials for providing the SSD1306 OLED display file, for more information please visit their site https://randomnerdtutorials.com/micropython-oled-display-esp32-esp8266/ <br />
+Second input positions the texts in x-direction(horizontal) of the OLED screen.  <br />
+Third input was used to position the texts in y-direction(vertical) of the OLED screen. <br /><br />
+
+
+Thanks to Random Nerd Tutorials for providing the SSD1306 OLED display file, for more information please visit their site https://randomnerdtutorials.com/micropython-oled-display-esp32-esp8266/ <br /> <br />
 
 
 Since I'm using TTGO T-Camera ESP32 WROVER, the camera pins was assign as followings. Please check your camera pins accordingly. <br />
-> If an 'Error when initializing the camera' still persisted after resetting esp32, please check your camera pins. <br />
+> If an 'Error when initializing the camera' still persisted after resetting esp32, please check your camera pins. <br /> <br />
 
 
-input_callback function setup bytes for an input Tensor. In other words it prepares the input picture captured by the camera to be used with AI model. <br />
+Input_callback function setup bytes for an input Tensor. In other words it prepares the input picture captured by the camera to be used with AI model. <br />
 
 
-output_callback function retrives AI condfidence values and print them to OLED screen. Microlite Outputs a Tensor value in signed 8-bit integer, namely from
+Output_callback function retrives AI condfidence values and print them to OLED screen. Microlite Outputs a Tensor value in signed 8-bit integer, namely from
 -128 to 127. We will convert this in a more readable manner, from 0 to 100 % instead. <br />
 If the confidence values is more than or equal to 52 %, change the color of the screen to white and display 'Person found!'<br />
 If no person is found or confidence is below 52 %, flip the screen's color the black and display 'No person found' <br />
@@ -56,3 +58,9 @@ microlite interpreter in line 63 has 4 input paramters.<br />
 > Callback function for input tensor. <br />
 > Callback fucntion for the output tensor <br />
 
+In the main loop the program runs as followings: <br />
+1. Get machine time in seconds, use for calculating FPS. <br />
+2. Use the camera to capture an image. <br />
+3. Get ouput from the AI in accordance with the captured image. <br />
+4. Display FPS value on the bottom of the OLED screen. <br />
+5. Reset OLED screen so it can be updated with new texts/values. <br /> <br />
