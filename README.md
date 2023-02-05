@@ -30,6 +30,29 @@ Run main.py script
 > If there is an 'Error when initializing the camera', simply reset your ESP32.<br />
 
 # About the scripts
-To write and update the SSD1306 OLED screen, two parameters was used as an input. <br/ >
-The first input is string text to be shown. <br/ >
-The second input is an int variable
+To write and update the SSD1306 OLED screen, a function with three input parameters was used. <br />
+The first input is a string variable which displays text into OLED screen. <br />
+Second input positions the texts in x-direction(horizontal) of the OLED screen  <br />
+Third input was used to position the texts in y-direction(vertical) of the OLED screen <br />
+Thanks to Random Nerd Tutorials for providing the SSD1306 OLED display file, for more information please visit their site https://randomnerdtutorials.com/micropython-oled-display-esp32-esp8266/ <br />
+
+
+Since I'm using TTGO T-Camera ESP32 WROVER, the camera pins was assign as followings. Please check your camera pins accordingly. <br />
+> If an 'Error when initializing the camera' still persisted after resetting esp32, please check your camera pins. <br />
+
+
+input_callback function setup bytes for an input Tensor. In other words it prepares the input picture captured by the camera to be used with AI model. <br />
+
+
+output_callback function retrives AI condfidence values and print them to OLED screen. Microlite Outputs a Tensor value in signed 8-bit integer, namely from
+-128 to 127. We will convert this in a more readable manner, from 0 to 100 % instead. <br />
+If the confidence values is more than or equal to 52 %, change the color of the screen to white and display 'Person found!'<br />
+If no person is found or confidence is below 52 %, flip the screen's color the black and display 'No person found' <br />
+
+This sections primarily opens and prepares the Tensorflow-Lite model to be used in the program. The bytearray in line 58 depends on the size of the model. <br />
+microlite interpreter in line 63 has 4 input paramters.<br />
+> Size of the input model, in this case we already prepares the model in previous section. <br />
+> Memory space for the Tensorflow-Lite model, again this depends on the size of the model. <br />
+> Callback function for input tensor. <br />
+> Callback fucntion for the output tensor <br />
+
