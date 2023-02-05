@@ -34,13 +34,14 @@ To write and update the SSD1306 OLED screen, a function with three input paramet
 The first input is a string variable which displays text into OLED screen. <br />
 Second input positions the texts in x-direction(horizontal) of the OLED screen.  <br />
 Third input was used to position the texts in y-direction(vertical) of the OLED screen. <br /><br />
-
+<img src = "https://user-images.githubusercontent.com/37290558/216828890-1bf7c724-d4cf-4c4b-ba7c-ad05525f50a2.png"> <br />
 
 Thanks to Random Nerd Tutorials for providing the SSD1306 OLED display file, for more information please visit their site https://randomnerdtutorials.com/micropython-oled-display-esp32-esp8266/ <br /> <br />
 
 
 Since I'm using TTGO T-Camera ESP32 WROVER, the camera pins was assign as followings. Please check your camera pins accordingly. <br />
 > If an 'Error when initializing the camera' still persisted after resetting esp32, please check your camera pins. <br /> <br />
+
 <img src = "https://user-images.githubusercontent.com/37290558/216828227-13d9b565-2398-42e7-a6c1-f79b5e8a57d9.png"> <br /> <br />
 
 
@@ -60,6 +61,7 @@ microlite interpreter in line 63 has 4 input paramters.<br />
 > Memory space for inferencing the Tensorflow-Lite model, again this depends greatly on the size of the model. <br />
 > Callback function for input tensor. <br />
 > Callback fucntion for the output tensor. <br />
+
 <img src = "https://user-images.githubusercontent.com/37290558/216828319-eb244890-f107-4aae-9b87-08a098b9e20e.png"> <br /> <br />
 
 
@@ -69,5 +71,6 @@ In the main loop the program runs as followings: <br />
 3. Get ouput from the AI in accordance with the captured image. <br />
 4. Display FPS value on the bottom of the OLED screen. <br />
 5. Reset OLED screen so it can be updated with new texts/values. <br />
-!<img src = "https://user-images.githubusercontent.com/37290558/216828682-bc0428ac-af3d-4c1b-8d34-4941b5d0b294.png"> <br /> <br />
+
+<img src = "https://user-images.githubusercontent.com/37290558/216828682-bc0428ac-af3d-4c1b-8d34-4941b5d0b294.png"> <br /> <br />
 
