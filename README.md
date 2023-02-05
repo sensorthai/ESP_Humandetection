@@ -2,7 +2,7 @@
 
 # About this respository
 This project aims to deploy a TensorFlow lite model into TTGO T-Camera ESP32 WROVER using Micropython. The given approach use Thonny as a Python IDE to install the firmware and compile the scripts. <br />
-This project was based on @moclieri  [https://github.com/mocleiri/tensorflow-micropython-examples.git](https://github.com/mocleiri/tensorflow-micropython-examples/tree/main/examples/person_detection) and thanks to @uraich https://github.com/uraich/EdgeComputing/tree/main/firmware for fixing the camera module issues presented in the recent MicroPython firmware. For more information please visit their respository. <br />
+This project was based on @moclieri https://github.com/mocleiri/tensorflow-micropython-examples/tree/main/examples/person_detection and thanks to @uraich https://github.com/uraich/EdgeComputing/tree/main/firmware for fixing the camera module issues presented in the recent MicroPython firmware. For more information please visit their respository. <br />
  
 # Uploading firmware into ESP32
 Any Python compiler should work with this project. <br /> 
@@ -74,3 +74,7 @@ In the main loop the program runs as followings: <br />
 
 <img src = "https://user-images.githubusercontent.com/37290558/216828682-bc0428ac-af3d-4c1b-8d34-4941b5d0b294.png"> <br /> <br />
 
+# Credits
+Thanks to @moecleiri for providing the scripts and firmware for this respository https://github.com/mocleiri/tensorflow-micropython-examples/tree/main/examples/person_detection. <br />
+Thanks to @uraich https://github.com/uraich/EdgeComputing/tree/main/firmware for fixing the camera module issues presented in the recent MicroPython firmware. <br />
+Thanks to Random nerd tutorial again for providing SSD1306 OLED screen Micropython file. https://randomnerdtutorials.com/micropython-oled-display-esp32-esp8266/.
